@@ -1,0 +1,30 @@
+.transactionHistory table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 400px; /* при потребі вказуйте бажану ширину */
+  margin: 0 auto;
+}
+
+.transactionHistory th,
+.transactionHistory td {
+  padding: 5px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: calc(10 / 8);
+  border-bottom: 1px solid #ef5d7a;
+}
+
+.transactionHistory th {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(20 / 15);
+  background-color: darkgray;
+  color: white;
+  font-weight: 600;
+  border-bottom: 1px solid black;
+}
+
+.transactionHistory tr:nth-child(2n + 1) {
+  background-color: #f0f0f0;
+}
