@@ -1,5 +1,5 @@
 import css from './TransactionHistory.module.css';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 export const TransactionHistory = ({ trans }) => {
   return (
@@ -23,4 +23,15 @@ export const TransactionHistory = ({ trans }) => {
       </tbody>
     </table>
   );
+};
+
+const transShape = PropTypes.shape({
+  id: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
+});
+
+TransactionHistory.propTypes = {
+  trans: PropTypes.arrayOf(transShape).isRequired,
 };
