@@ -17,7 +17,7 @@ const friendShape = PropTypes.shape({
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
   id: PropTypes.number.isRequired,
-});
+}).isRequired;
 
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(friendShape).isRequired,
